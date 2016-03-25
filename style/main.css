@@ -1,0 +1,264 @@
+/*STYLING IN FOR MAIN*/
+/*#id .class*/
+
+/**common things**/
+html, body {
+	top:0;
+	padding: 0;
+	margin: 0px;
+	border: 0;
+}
+
+@font-face {
+	font-family: 'customFont';
+	src: url(../font/gothic.woff);
+}
+
+h2 {
+	font-family: 'customFont';
+	text-align: center;
+	color: #1c487a;
+	font-weight: bold;
+}
+
+h3{
+	font-family: 'customFont';
+}
+
+.pics {
+	width: 10%;
+	height: auto;
+	/*border-radius: 50%;*/
+	margin-right: 30px;
+}
+
+#main {
+	text-align: center;
+	width: 100%;
+}
+
+#main img {
+	width: 15%;
+	height: auto;
+	border-radius: 50%;
+}
+
+#linkImg img {
+	width: 25px;
+}
+
+/*specific stuff*/
+#coverBackground {
+	background-image: url('../image/woodbg.jpg');
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+/*****NAVIGATION BAR*****/
+#body-navbar-list {
+	position: fixed;
+	width: 100%;
+	min-width: 100%;
+	top: 25px;
+	padding: 1% 0px;
+	margin-top: 0;
+	list-style: none;
+	background: #000;
+	opacity: 0.4;
+	transition: height 0.5s linear 0s, padding 0.5s linear 0s;
+}
+
+#body-navbar-list ul {
+	text-align: center;
+	margin-right: 9%;
+}
+
+#body-navbar-list ul li {
+	width: 100%;
+	display: inline;
+	margin-left: 50px;
+}
+
+#body-navbar-list ul li a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 14px;
+	font-family: 'customFont';
+}
+
+#body-navbar-list ul li a:hover {
+	color: #79bbd1;
+	font-weight: bold;
+}
+
+#body-navbar-list ul li a:active {
+	color: #79bbd1;
+	font-weight: bold;
+}
+
+#body-navbar-list ul li a:visited {
+	color: #79bbd1;
+	font-weight: bold;
+}
+
+#name {
+	top: 0;
+	margin-top: 0;
+}
+
+#name h1 {
+	color: #223a57;
+	margin-top: 0;
+	font-size: 400%;
+	margin-bottom: -20px;
+	font-family: 'customFont';
+	font-weight: bold;
+}
+
+#name h2 {
+	color:#000;
+	text-align: center;
+}
+
+/*div to hold on content child elements*/
+#contentWrapper {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.content {
+	width: 100%;
+	padding: 6% 0;
+}
+
+.content div {
+	width: 80%;
+	margin: 5px auto;
+	padding-bottom: 5px;
+}
+
+.content h3 {
+	color: #434343;
+}
+
+.content p {
+	font-family: 'customFont';
+	font-size: 15px;
+	color: #5a5a5a;
+}
+
+.project h3 {
+	margin-top: 40px;
+}
+
+.jobs img {
+	border-radius: 50%;
+	border-width: 1px;
+	border-color: gray;
+	width: 10%;
+}
+
+.jobs h3{
+	display: inline-block;
+	margin-left: 10px;
+}
+
+.jobs div {
+}
+
+.jobs ul {
+	list-style-type: circle;
+	font-family: 'customFont';
+	margin-left: -8px;
+	font-size: 15px;
+	color: #223a57;
+}
+
+.jobs footer {
+	font-family: 'customFont';
+	font-size: 13px;
+	color: gray;
+	padding: 0;
+	margin-top: -20px;
+	margin-left: 15px;
+}
+
+#greyProject {
+	-webkit-box-shadow: inset 0px -1px 62px -5px rgba(0,0,0,0.45);
+    -moz-box-shadow: inset 0px -1px 62px -5px rgba(0,0,0,0.45);
+    box-shadow: inset 0px -1px 62px -5px rgba(0,0,0,0.45);
+	/*padding: 10px 0;*/
+	overflow: hidden;
+	background-color: #d7eff7;
+	padding: 7% 0;
+}
+
+.gallery {
+	margin-left: 50px;
+	margin-top: 50px;/*
+	display: block;
+	text-align: center;*/
+}
+
+.gallery ul {
+	list-style: none;
+}
+
+.gallery ul li{
+	float: left;
+	margin: 10px;
+}
+
+.gallery img {
+	width: 200px;
+	height: 200px;
+	display: block;
+	-webkit-box-shadow: 0 2px 15px 1px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0 2px 15px 1px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 2px 15px 1px rgba(0, 0, 0, 0.5);*/
+}
+
+.gallery img:hover {
+	-webkit-filter: blur(2px);
+	-moz-box-filter:blur(2px);
+}
+
+#grayContact {
+	-webkit-box-shadow: inset 0px -1px 62px -5px rgba(0,0,0,0.45);
+    -moz-box-shadow: inset 0px -1px 62px -5px rgba(0,0,0,0.45);
+	box-shadow: inset 0px -1px 62px -5px rgba(0,0,0,0.45);
+	padding: 10px 0;
+	background-color: #d7eff7;
+	text-align: center;
+	font-weight: bold;
+	padding: 6% 0;
+}
+
+#grayContact p{
+	display: inline-block;
+	font-size: bold;
+	font-size: 16px;
+	margin-top: -50px;
+}
+
+#footer {
+	/**#8b8c8c*/
+	background-color: #223a57;
+	padding: 5%;
+}
+
+#footer p {
+	font-family: 'customFont';
+	text-align: center;
+	font-size: 13px;
+	font-weight: bold;
+	/*color:#44474a;*/
+	color: #858A8C;
+}
