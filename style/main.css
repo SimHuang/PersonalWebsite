@@ -17,7 +17,7 @@ html, body {
 h2 {
 	font-family: 'customFont';
 	text-align: center;
-	color: #1c487a;
+	color: #084fb9c5;
 	font-weight: bold;
 }
 
@@ -49,7 +49,7 @@ h3{
 
 /*specific stuff*/
 #coverBackground {
-	background-image: url('../image/woodbg.jpg');
+	background-image: url('../image/cover.jpg');
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -61,6 +61,16 @@ h3{
 	align-items: center;
 }
 
+#coverLayer {
+	background-color:#201a16;
+	opacity: .7;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 /*****NAVIGATION BAR*****/
 #body-navbar-list {
 	position: fixed;
@@ -70,8 +80,9 @@ h3{
 	padding: 1% 0px;
 	margin-top: 0;
 	list-style: none;
-	background: #000;
-	opacity: 0.4;
+	font-weight: bold;
+	/* background: #000; */
+	opacity: 1;
 	transition: height 0.5s linear 0s, padding 0.5s linear 0s;
 }
 
@@ -81,7 +92,7 @@ h3{
 }
 
 #body-navbar-list ul li {
-	width: 100%;
+	/* width: 100%; */
 	display: inline;
 	margin-left: 50px;
 }
@@ -94,27 +105,28 @@ h3{
 }
 
 #body-navbar-list ul li a:hover {
-	color: #79bbd1;
+	color: #4a4a4a;
 	font-weight: bold;
 }
 
 #body-navbar-list ul li a:active {
-	color: #79bbd1;
+	color: #4a4a4a;
 	font-weight: bold;
 }
 
 #body-navbar-list ul li a:visited {
-	color: #79bbd1;
+	color: #4a4a4a;
 	font-weight: bold;
 }
 
 #name {
 	top: 0;
 	margin-top: 0;
+	z-index: 1000;
 }
 
 #name h1 {
-	color: #223a57;
+	color: #ffffff;
 	margin-top: 0;
 	font-size: 400%;
 	margin-bottom: -20px;
@@ -123,7 +135,7 @@ h3{
 }
 
 #name h2 {
-	color:#000;
+	color:#bebebe;
 	text-align: center;
 }
 
@@ -156,6 +168,8 @@ h3{
 
 .project h3 {
 	margin-top: 40px;
+	color: #11bb82;
+	display: block;
 }
 
 .jobs img {
@@ -163,14 +177,20 @@ h3{
 	border-width: 1px;
 	border-color: gray;
 	width: 10%;
+	position: relative;
+	top: -20px;
+	z-index: -1;
+	/* vertical-align: top; */
 }
 
 .jobs h3{
 	display: inline-block;
 	margin-left: 10px;
+	color: #11bb82;
 }
 
 .jobs div {
+	display: inline-block;
 }
 
 .jobs ul {
@@ -196,15 +216,13 @@ h3{
     box-shadow: inset 0px -1px 62px -5px rgba(0,0,0,0.45);
 	/*padding: 10px 0;*/
 	overflow: hidden;
-	background-color: #d7eff7;
+	background-color: #ffffff;
 	padding: 7% 0;
 }
 
 .gallery {
-	margin-left: 50px;
-	margin-top: 50px;/*
-	display: block;
-	text-align: center;*/
+	margin-top: 20px;
+	text-align: center;
 }
 
 .gallery ul {
@@ -212,17 +230,18 @@ h3{
 }
 
 .gallery ul li{
-	float: left;
+	display: inline-block;
 	margin: 10px;
 }
 
 .gallery img {
-	width: 200px;
-	height: 200px;
+	width: 100px;
+	height: 100px;
 	display: block;
+	border-radius: 5px;
 	-webkit-box-shadow: 0 2px 15px 1px rgba(0, 0, 0, 0.5);
 	-moz-box-shadow: 0 2px 15px 1px rgba(0, 0, 0, 0.5);
-	box-shadow: 0 2px 15px 1px rgba(0, 0, 0, 0.5);*/
+	box-shadow: 0 2px 15px 1px rgba(0, 0, 0, 0.5);
 }
 
 .gallery img:hover {
@@ -235,7 +254,7 @@ h3{
     -moz-box-shadow: inset 0px -1px 62px -5px rgba(0,0,0,0.45);
 	box-shadow: inset 0px -1px 62px -5px rgba(0,0,0,0.45);
 	padding: 10px 0;
-	background-color: #d7eff7;
+	background-color: #ffffff;
 	text-align: center;
 	font-weight: bold;
 	padding: 6% 0;
@@ -250,7 +269,7 @@ h3{
 
 #footer {
 	/**#8b8c8c*/
-	background-color: #223a57;
+	background-color: #222;
 	padding: 5%;
 }
 
@@ -260,5 +279,5 @@ h3{
 	font-size: 13px;
 	font-weight: bold;
 	/*color:#44474a;*/
-	color: #858A8C;
+	color: #999;
 }

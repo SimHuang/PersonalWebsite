@@ -17,14 +17,17 @@ function yScroll() {
 	aboutMeY = aboutMeY - 100;
 
 	if(yPos >= aboutMeY) {
-		navBar.style.background = "#223a57";
+		navBar.style.background = "#1e4073";
 		navBar.style.opacity = "1";
 		navBar.style.top = "0px";
 		navBar.style.padding = ".5%";
+		navBar.style.zIndex = 1;
 
 	} else {
-		navBar.style.background = "#000";
-		navBar.style.opacity = "0.4";
+		// navBar.style.background = "#000";
+		// navBar.style.opacity = "0.4";
+		navBar.style.background = "transparent";
+		// navBar.style.opacity = "" 
 		navBar.style.top = "25px";
 		navBar.style.padding = "1%";
 	}
